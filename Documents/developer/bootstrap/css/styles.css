@@ -1,0 +1,110 @@
+/*Normalize*/
+html,body,div{
+	padding: 0;
+	margin: 0;
+}
+
+*{
+	list-style: none;
+}
+
+/*structure*/
+.header-top{
+	height: 5em;
+}
+.header-bottom{
+	height: 10em;
+}
+
+.header-contact, 
+.header-search,
+.header-cart,
+.header-logo,
+.header-nav{height: 100%;}
+
+.display-inline{
+	display: inline;
+}
+
+.theCarousel{
+	height: 30em;
+}
+
+
+
+.content2{
+
+}
+	.showcase{
+		height: 10em;
+	}
+		.show-1,.show-2{
+			height: 100%;
+		}
+
+
+.dishes-1, .dishes-2, .dishes-3, .dishes-4{
+	height: 15em;
+} 
+
+.border{
+	height: 1em;
+	border-style: dashed;
+	border-color: gray;
+}
+/*
+.footer-nav{
+	margin: 0 auto;
+}
+*/
+.footer-nav li{
+	display: inline;
+	text-align: center;
+}
+		
+/*style*/
+.cat1-list,.cat2-list,.cat3-list{
+	padding: 1em;
+	border-radius: 1em;
+	
+}
+
+.cat1-list li,.cat2-list li,.cat3-list li {
+	border-style: dashed;
+}
+
+.cat1-list{
+	background-color: red;
+}
+
+.cat2-list{
+	background-color: green;
+}
+
+.cat3-list{
+	background-color: blue;
+}
+
+p{
+	color: black;
+}
+
+.slide1{
+	background:green;
+}
+
+.slide2{
+	background:red;	
+}
+
+.slide3{
+	background:orange;
+}
+
+/*temp frame outline*/
+
+*{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
