@@ -9,17 +9,18 @@
 </head>
 <body> <!-- class="container-fluid" --> 
 
-<header class="container-fluid">
+<header class="container-fluid"> <!-- class="container-fluid" -->
 	<div class="row header-top">
-		<div class="col-lg-3"></div> <!-- col-lg-offset-3 -->
-		<div class="col-lg-2 header-contact"><span class="text-center center-block">contact:" 111-111-1111"</span></div>
-		<div class="col-lg-2 header-search">
-		<input class="btn btn-default form-control" type="search" name="search" placeholder="Search...">
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div> <!-- col-lg-offset-3 -->
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 header-contact"><span class="text-center center-block"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> contact: "111-111-1111"</span>
 		</div>
-		<div class="col-lg-2 header-cart">
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 header-search">
+		<input class="btn btn-default form-control glyphicon glyphicon-search" type="search" name="search" placeholder="Search...">
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 header-cart text-center">
 			
-				<a href="#"><img src="..."></a>  
-				<a href=’#’ class="dropdown-toggle" data-toggle='dropdown'><h4>Cart</h4></a> <span class="caret"></span>
+				  
+				<a href=’#’ class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span><h4 class="display-inline"> Cart<span class="caret"></span></h4></a> 
 					<ul class="dropdown-menu">
 						<li><a href="#">Cart item 1</a></li>
 						<li><a href="#">Cart item 2</a></li>
@@ -27,20 +28,28 @@
 					</ul>
 				
 		</div>
-		<div class="col-lg-3"></div> <!-- col-lg-offset-3 -->
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div> <!-- col-lg-offset-3 -->
 	</div>
-	<div class="row header-bottom">
-		<div class="col-lg-3"></div> <!-- col-lg-offset-3 -->
-		<div class="col-lg-3 header-logo">
-			<a href="#"><img src="..."></a>
-			<h4>Cakefactory!</h4>
-			<p>Text about cake!</p>
+
+	<div class="border center-block"></div>
+
+	<div class="row header-bottom"> <!--header-bottom -->
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" ></div>   
+
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 header-logo"> <!-- TODO:SLOPPY --><!-- class="col-lg-12" -->
+		 	
+			<a class="pull-left" href="#"><img class="logo-img img-rounded img-responsive" src="css/camel.jpg"></a>
+			<div class="logo-text">
+				<p class="display-inline">Logo-Header!</p>
+				<p>Logo-text!</p> 
+			</div>
 		</div>
-		<div class="col-lg-3 header-nav">
+
+		<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 col header-nav"> <!-- class="col-lg-12" -->
 			
 
 			<nav class="navbar navbar-default">
-			  <div class="container-fluid">
+			  <div class="container-fluid nav-container">
 			    	<!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -53,51 +62,71 @@
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				 		<ul class="nav navbar-nav">
-				        	<li class="dropdown">
-				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					        	<ul class="dropdown-menu">
-						            <li><a href="#">Action</a></li>
-						            <li><a href="#">Another action</a></li>
-						            <li><a href="#">Something else here</a></li>
-						            <li><a href="#">Separated link</a></li>
-					                <li><a href="#">One more separated link</a></li>
-				          		</ul>
-				        	</li>
-				        	<li class="dropdown">
-				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					        	<ul class="dropdown-menu">
-						            <li><a href="#">Action</a></li>
-						            <li><a href="#">Another action</a></li>
-						            <li><a href="#">Something else here</a></li>
-						            <li><a href="#">Separated link</a></li>
-					                <li><a href="#">One more separated link</a></li>
-				          		</ul>
-				        	</li>
-				        	<li class="dropdown">
-				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					        	<ul class="dropdown-menu">
-						            <li><a href="#">Action</a></li>
-						            <li><a href="#">Another action</a></li>
-						            <li><a href="#">Something else here</a></li>
-						            <li><a href="#">Separated link</a></li>
-					                <li><a href="#">One more separated link</a></li>
-				          		</ul>
-				        	</li>
-				        </ul>
-			        
-			      </ul>
+			 		<ul class="nav navbar-nav">
+			        	<li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img class="img-responsive img-circle visible-lg" src="css/camel.jpg"> Dropdown <span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li><a href="#">Separated link</a></li>
+				                <li><a href="#">One more separated link</a></li>
+			          		</ul>
+			        	</li>
+			        	<li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img class="img-responsive img-circle visible-lg" src="css/camel.jpg"> Dropdown <span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li><a href="#">Separated link</a></li>
+				                <li><a href="#">One more separated link</a></li>
+			          		</ul>
+			        	</li>
+			        	<li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img class="img-responsive img-circle visible-lg" src="css/camel.jpg"> Dropdown <span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li><a href="#">Separated link</a></li>
+				                <li><a href="#">One more separated link</a></li>
+			          		</ul>
+			        	</li>
+			        	<li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img class="img-responsive img-circle visible-lg" src="css/camel.jpg"> Dropdown <span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li><a href="#">Separated link</a></li>
+				                <li><a href="#">One more separated link</a></li>
+			          		</ul>
+			        	</li>
+		        		<li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img class="img-responsive img-circle visible-lg" src="css/camel.jpg"> Dropdown <span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li><a href="#">Separated link</a></li>
+				                <li><a href="#">One more separated link</a></li>
+			          		</ul>
+			        	</li>
+			        	
+			        </ul>			      			      
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
 		</div>
-		<div class="col-lg-3"></div> 
+
+		
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div> <!-- class="col-lg-1" -->
 	</div> <!-- End Header Bottom -->
 </header> <!-- End header -->
 
 
-<div class="container "> <!-- carousel -->
-
+<div class="container-fluid slides"> <!-- carousel -->
 	<div id="theCarousel" class="theCarousel carousel slide" data-ride='carousel'>
 		
 		<ol class="carousel-indicators">
@@ -109,40 +138,41 @@
 		<div class="carousel-inner">
 			
 			<div class="item active">
-				<div class="slide1"></div> 
-			 
+				<img class="carousel-bg img-responsive img-rounded fit-container" src="css/bg1.jpg">
+				<div class="carousel-caption"> 
+			 	
 					<h1>Amazing Backgrounds</h1>
 					<p>Thousands of backgrounds for free</p>
 					<p><a href="#" class="btn btn-primary btn-sm" ">Get Them Now!</a></p>
-			
+				</div>
 			</div>
 		
 
 		
 			<div class="item">
-				<div class="slide2"></div>
+				<img class="carousel-bg img-responsive img-rounded fit-container" src="css/bg2.jpg">
+				<div class="carousel-caption">
 				
 					<h1>Amazing Colors</h1>
 					<p>Thousands of Colors for free</p>
 					<p><a href="#" class="btn btn-primary btn-sm" ">Get Them Now!</a></p>
-				
+				</div>
 			</div>
 		
 
 		
 			<div class="item">
-				<div class="slide3"></div>
+				<img class="carousel-bg img-responsive img-rounded fit-container" src="css/bg3.jpg">
+				<div class="carousel-caption">
 				
 					<h1>Amazing Illustrations</h1>
 					<p>Thousands of Illustrations for free</p>
 					<p><a href="#" class="btn btn-primary btn-sm" ">Get Them Now!</a></p>
-				
+				</div>
 			</div>
 
 		</div>
-
-	</div>
-
+	
 	<a class='left carousel-control' href="#theCarousel" role='button' data-slide='prev'>
 	<span class="glyphicon glyphicon-chevron-left" aria-hidden='true'></span>
 	<span class="sr-only">Previous</span>
@@ -153,36 +183,39 @@
 	<span class="sr-only">Next</span>
 	</a>
 
-</div>
-  <!-- End carousel -->
+	</div>
 
-<div class="content2 container-fluid">
+</div> <!-- End carousel -->
+ 
+<div class="content-2 container-fluid">
 	
-	<div class="showcase row">
+	<div class="showcase row text-center center-block">
 		<div class="col-lg-2"></div>
 		<div class="col-lg-4 show-1">
-			<img src="#">
+			<img class="img-responsive img-rounded img-circle text-center center-block" src="css/camel.jpg">
 			<a href="#"><h4>show-1 link + info</h4></a>
 			<p>show-1 img info</p>
 		</div>
 		<div class="col-lg-4 show-2">
-			<img src="#">
+			<img class="img-responsive img-rounded img-circle text-center center-block" src="css/camel.jpg">
 			<a href="#"><h4>show-2 link + info</h4></a>
 			<p>show-2 img info</p>
 		</div>
 		<div class="col-lg-2"></div>
 	</div> <!-- showcase end -->
 
-	<div class="container">
+	<div class="border center-block"></div>
+
+	<div class="container content-3">
 		<div class="row dishes-banner">
-			<img class="img-responsive center-block" src="#">
+			<img class="img-responsive img-rounded center-block text-center" src="css/camel.jpg">
 			<h2 class="text-center"> Etiam sit amet dui commodo </h2>
 			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi massa. Aliquam dignissim interdum velit, ut malesuada odio dapibus eu. In quis dolor vitae ipsum gravida ullamcorper et in augue. Fusce ac ornare diam. Aliquam imperdiet, tellus in feugiat imperdiet, orci eros viverra neque, vel posuere odio elit nec eros. </p>
 		</div>
 		<div class="row dishes-img">
 			<div class="col-md-3 col-sm-6">
 				<div class="dishes-1">
-					<img class="img-responsive" src="#">
+					<img class="img-responsive center-block img-rounded" src="css/camel.jpg">
 				</div>
 				<div class="img-details">
 					<h3>In quis dolor vitae ipsum gravida</h3>
@@ -192,7 +225,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="dishes-2">
-					<img class="img-responsive" src="#">
+					<img class="img-responsive center-block img-rounded" src="css/camel.jpg">
 				</div>
 				<div class="img-details">
 					<h3>In quis dolor vitae ipsum gravida</h3>
@@ -202,7 +235,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="dishes-3">
-					<img class="img-responsive" src="#">
+					<img class="img-responsive center-block img-rounded" src="css/camel.jpg">
 				</div>
 				<div class="img-details">
 					<h3>In quis dolor vitae ipsum gravida</h3>
@@ -212,7 +245,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="dishes-4">
-					<img class="img-responsive" src="#">
+					<img class="img-responsive center-block img-rounded" src="css/camel.jpg">
 				</div>
 				<div class="img-details">
 					<h3>In quis dolor vitae ipsum gravida</h3>
@@ -225,62 +258,62 @@
 
 </div> <!-- end content2 -->
 
-<div class="border"></div>
+<div class="border center-block"></div>
 
-<div class="content-3 container">
-	
+<div class="content-4 container">
+	<img class="center-block emblem img-responsive" src="css/triangle.jpg">
 
 	<!-- TODO:SOMETHING IS WRONG HERE -->
 	<div> <!-- heading/description/img -->
- 		<h1>CONTENT-3</h1>
+ 		<h1 class="text-center">CONTENT-4</h1>
 	</div>
 
-	<div class="container"> <!-- 3 images & description --> 
+	<div class="row"> <!-- 3 images & description --> 
 		<div class="col-md-4 col-sm-4 cat1"> <!-- category-1 -->
 			<div class="menu-head">
-				<img class="img-responsive" src="#">
+				<img class="img-responsive center-block img-rounded" src="css/camel.jpg">
 				<h3>Cat 1</h3>
 				<div class="cat1-underline"></div>
 			</div>
 			<div>
 				<ul class="cat1-list ">
-					<li><span class="badge">1</span></li>
-					<li><span class="badge">2</span></li>
-					<li><span class="badge">3</span></li>
-					<li><span class="badge">4</span></li>
-					<li><span class="badge">5</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">1</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">2</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">3</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">4</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">5</span></li>
 				</ul>
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-4 cat2"> <!-- category-2 -->
 			<div class="menu-head">
-				<img class="img-responsive" src="#">
+				<img class="img-responsive center-block img-rounded" src="css/camel.jpg">
 				<h3>Cat 2</h3>
 				<div class="cat2-underline"></div>
 			</div>
 			<div>
 				<ul class="cat2-list ">
-					<li><span class="badge">1</span></li>
-					<li><span class="badge">2</span></li>
-					<li><span class="badge">3</span></li>
-					<li><span class="badge">4</span></li>
-					<li><span class="badge">5</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">1</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">2</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">3</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">4</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">5</span></li>
 				</ul>
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-4 cat3"> <!-- category-3 -->
 			<div class="menu-head">
-				<img class="img-responsive" src="#">
+				<img class="img-responsive center-block img-rounded" src="css/camel.jpg">
 				<h3>Cat 3</h3>
 				<div class="cat3-underline"></div>
 			</div>
 			<div>
 				<ul class="cat3-list ">
-					<li><span class="badge">1</span></li>
-					<li><span class="badge">2</span></li>
-					<li><span class="badge">3</span></li>
-					<li><span class="badge">4</span></li>
-					<li><span class="badge">5</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">1</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">2</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">3</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">4</span></li>
+					<li> No eam idque postea appellantur<span class="badge pull-right">5</span></li>
 				</ul>
 			</div>
 		</div>
@@ -288,33 +321,35 @@
 
 </div> <!-- end content-3 -->
 
-<div class="border"></div>
+<div class="border center-block"></div>
 
 <div class="content-4 container"> <!--media heading--> 
+	<img class="center-block emblem img-responsive" src="css/triangle.jpg"> 
 	<div class="row">
 		<div class="col-md-6 col-sm-6">
 			<div class="media">
 				  <div class="media-left">
 				    <a href="#">
-				      <img class="media-object" src="..." alt="...">
+				      <img class="media-object img-rounded img-responsive" src="css/camel.jpg" alt="...">
 				    </a>
 				  </div>
 				  <div class="media-body">
 				    <h4 class="media-heading">Media heading</h4>
-				    ...
+				    Pri prima delicatissimi at. Docendi pertinax vim ex, quod quas vim id. No eam idque postea appellantur, habeo vivendo ei quo, offendit facilisis sit ex. Vocent lobortis efficiantur cu ius. Ne vim meis clita.
 				  </div>
 			</div>
 		</div>
+
 		<div class="col-md-6 col-sm-6">
 			<div class="media">
 				  <div class="media-left">
 				    <a href="#">
-				      <img class="media-object" src="..." alt="...">
+				      <img class="media-object img-rounded img-responsive" src="css/camel.jpg" alt="...">
 				    </a>
 				  </div>
 				  <div class="media-body">
 				    <h4 class="media-heading">Media heading</h4>
-				    ...
+				    Pri prima delicatissimi at. Docendi pertinax vim ex, quod quas vim id. No eam idque postea appellantur, habeo vivendo ei quo, offendit facilisis sit ex. Vocent lobortis efficiantur cu ius. Ne vim meis clita.
 				  </div>
 			</div>
 		</div>
@@ -325,25 +360,26 @@
 			<div class="media">
 				  <div class="media-left">
 				    <a href="#">
-				      <img class="media-object" src="..." alt="...">
+				      <img id="media-image" class="media-image media-object img-rounded img-responsive" src="css/camel.jpg" alt="...">
 				    </a>
 				  </div>
 				  <div class="media-body">
 				    <h4 class="media-heading">Media heading</h4>
-				    ...
+				    Pri prima delicatissimi at. Docendi pertinax vim ex, quod quas vim id. No eam idque postea appellantur, habeo vivendo ei quo, offendit facilisis sit ex. Vocent lobortis efficiantur cu ius. Ne vim meis clita.
 				  </div>
 			</div>
 		</div>
+		
 		<div class="col-md-6 col-sm-6">
 			<div class="media">
 				  <div class="media-left">
 				    <a href="#">
-				      <img class="media-object" src="..." alt="...">
+				      <img class="media-object img-rounded img-responsive" src="css/camel.jpg" alt="...">
 				    </a>
 				  </div>
 				  <div class="media-body">
 				    <h4 class="media-heading">Media heading</h4>
-				    ...
+				    Pri prima delicatissimi at. Docendi pertinax vim ex, quod quas vim id. No eam idque postea appellantur, habeo vivendo ei quo, offendit facilisis sit ex. Vocent lobortis efficiantur cu ius. Ne vim meis clita.
 				  </div>
 			</div>
 		</div>
@@ -351,13 +387,15 @@
 
 </div> <!--End Content-4-->
 
-<footer class="container">
+<div class="border center-block"></div>
+
+<footer class="container-fluid">
 	<div class="row">
-		<ul class="footer-nav center-block">
-			<li><a class="text-center btn btn-lg" href="#">placeholder</a></li>
-			<li><a class="text-center btn btn-lg" href="#">placeholder</a></li>
-			<li><a class="text-center btn btn-lg" href="#">placeholder</a></li>
-			<li><a class="text-center btn btn-lg" href="#">placeholder</a></li>
+		<ul class="footer-nav  text-center">
+			<li><a class="text-center btn btn-lg btn-primary" href="#">placeholder</a></li>
+			<li><a class="text-center btn btn-lg btn-primary" href="#">placeholder</a></li>
+			<li><a class="text-center btn btn-lg btn-primary" href="#">placeholder</a></li>
+			<li><a class="text-center btn btn-lg btn-primary" href="#">placeholder</a></li>
 		</ul>
 	</div>
 </footer>
